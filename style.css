@@ -110,6 +110,11 @@ align-items: center;
     font-weight: 800;
 }
 
+.hr1 {
+    margin: 40px auto;
+    width: 1400px;
+}
+
 /* 門市資訊 */
 #info {
     display: grid;
