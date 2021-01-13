@@ -19,10 +19,13 @@ align-items: center;
     margin: auto 100px;
 }
 
+/* 動態前的樣式 */
 #link a{
     padding: 0 60px;
+    /* td 文字裝飾 */
     text-decoration: none;
     color: rgb(255, 255, 255);
+    /* 動態轉換時間 */
     transition: 0.2s;
     border: 0;
     font-size: 25px;
@@ -32,6 +35,7 @@ align-items: center;
     margin: auto 10px ;
 }
 
+/* 動態後樣式 */
 #link a:hover {
     color: rgb(190, 201, 184);
     border: 5px rgb(190, 201, 184);
