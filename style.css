@@ -121,6 +121,9 @@ opacity: 0.9;
     margin: 0 auto;
 }
 
+/* 元素 1 > 元素 2 */
+/* 元素 1 裡面 第一層 的 元素 2 */
+/* 將圖面分成左右兩側 */
 #products > div {
     display: grid;
     grid-template-columns:  40% 60%;
@@ -130,6 +133,7 @@ opacity: 0.9;
 #products .pic img {
     width: 100%;
     height: 350px;
+    /* 圖片比例 */
     object-fit: cover; 
 }
 
@@ -148,20 +152,24 @@ opacity: 0.9;
     margin-bottom: 40px;
 }
 /*  格線樣板區域：利用格線區域名稱設定順序 */ 
+/* 選出要更改的區域 */
 #products > div:nth-child(2){
     background-color: rgb(211, 208, 168);
 }
 
-#products > div:nth-child(2){
-    grid-template-areas:"pic text";
-    grid-template-columns:60% 40%;
-}
 
+/* 把單區域劃分成文字區和圖片區 */
 #products > div:nth-child(2) .text{
     grid-area: text;
 }
 #products > div:nth-child(2) .pic{
     grid-area: pic;
+}
+
+/* 將兩區順序調換 */
+#products > div:nth-child(2){
+    grid-template-areas:"pic text";
+    grid-template-columns:60% 40%;
 }
 
 /* 按鈕樣式 */
@@ -170,11 +178,14 @@ opacity: 0.9;
     margin: 20px 0;
     padding: 12px 20px;
     /* 框粗細度 */
+    /* solid 外框線 */
     border: 2.5px solid #053f27;
-    /* 文字裝飾 */
+    /* 文字裝飾 把底線關閉*/
     text-decoration: none;
     font-size: 20px;
+    /* 文字粗細 */
     font-weight: 550;
+    /* 文字間距 */
     letter-spacing: 10px;
     color: rgb(24, 59, 4);
     transition: 0.5s;
