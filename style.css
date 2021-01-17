@@ -11,6 +11,12 @@ background: rgb(2, 37, 6);
 box-shadow: 0 2px 15px rgba(32, 43, 32, 0.3) ;
 padding: 30px;
 align-items: center;
+/* 固定位置 */
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 3;
+opacity: 0.8;
 
 }
 
@@ -42,6 +48,72 @@ align-items: center;
     font-family: bold;
     font-size: 28px;
 }
+
+/* 新品 */
+/* 輪播圖 */
+#banner div {
+    /* 高度 vh螢幕高度 */
+    height: 100vh;
+}
+
+.banner1 {
+    background-image: url(./img/b-coffee.jpg);
+    background-size: cover;
+
+}
+.banner2 {
+    background-image: url(./img/b-tea.jpg);
+    background-size: cover;
+}
+.banner3 {
+    background-image: url(./img/b-cake.jpg);
+    background-size: cover;
+}
+
+#banner {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#banner h1 {
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 120px;
+    text-shadow:0 5px 5px rgb(190, 201, 184) ;
+    text-align: center;
+}
+
+#banner p {
+    padding: 30px;
+    font-size: 32px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#banner hr {
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#banner .slick-prev {
+    left: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-next {
+    right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#banner .slick-dots {
+    bottom: 25px;
+}
+
 
 /* 商品種類 */
 #products {
@@ -146,6 +218,30 @@ align-items: center;
 
 #info .button {
     margin: 80px 0 0 100px;
+}
+
+/* 其他服務 */
+
+#service {
+    width: 1280px;
+    line-height: 2;
+    margin-top: 100px;
+}
+
+#service {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+#service img:hover {
+    border-radius: 5px;
+
 }
 
 
