@@ -5,6 +5,4 @@ $("#banner").slick({
     dots: true
 });
 
-$("service").slick({
-    slidesToShow: 3
-});
+$("#service").slick({slidesToShow:3});

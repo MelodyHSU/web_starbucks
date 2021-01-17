@@ -221,27 +221,41 @@ opacity: 0.8;
 }
 
 /* 其他服務 */
-
 #service {
     width: 1280px;
     line-height: 2;
     margin-top: 100px;
 }
 
-#service {
+/* focus 聚焦：選取此元素時 */
+#service div:focus {
+    /* 選取邊框：無 */
+    outline: none;
+}
+
+
+#service img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 300px;
     display: block;
     margin: 0 auto;
     transition: 0.5s;
 }
 
 #service img:hover {
-    border-radius: 5px;
+    border-radius: 15px;
 
+}
+
+#service h2 {
+    text-align: center;
+    margin-top: 15px;
+    color: #aaa;
+    font-weight: 100;
+    font-size: 20px;
 }
 
 
