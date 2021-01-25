@@ -255,9 +255,12 @@ opacity: 0.9;
 #service img {
     width: 350px;
     height: 350px;
+      /* border-radius: 50%; 寬高要相同 */
     border-radius: 50%;
     object-fit: cover;
     border-radius: 350px;
+    /* 顯示模式：區塊 */
+    /* 區塊元素 block */
     display: block;
     margin: 0 auto;
     transition: 0.5s;
