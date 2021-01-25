@@ -9,6 +9,9 @@ $("#banner").slick({
     dots: true
 });
 
-$("#service").slick({slidesToShow:3,
+$("#service").slick({
+    // 顯示數量 一排幾個
+    slidesToShow:3,
+    // 每次輪播數量 1-3 3-6
     slidesToScroll: 3,
 });
