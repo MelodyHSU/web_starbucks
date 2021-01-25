@@ -98,20 +98,26 @@ opacity: 0.9;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+/* banner的箭頭 */
+/* 左 */
 #banner .slick-prev {
+    /* 位置 */
     left: 50px;
+    /* 圖層 數字越大越前面 */
     z-index: 2;
+    /* 尺寸 倍數 */
     transform: scale(1.5);
 }
-
+/* 右 */
 #banner .slick-next {
     right: 50px;
     z-index: 2;
     transform: scale(1.5);
 }
-
+/* 下方點點 */
 #banner .slick-dots {
     bottom: 25px;
+    transform: scale(2);
 }
 
 
