@@ -230,16 +230,17 @@ opacity: 0.9;
 #info .text p{
     padding: 10px 0 25px;
     line-height: 2;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 
 #info .button {
-    margin: 80px 0 0 100px;
+    margin: 120px 0 0 100px;
 }
 
 /* 其他服務 */
 #service {
     width: 1280px;
+    /* 行高 */
     line-height: 2;
     margin-top: 150px;
     margin: 0 auto;
@@ -255,10 +256,9 @@ opacity: 0.9;
 #service img {
     width: 350px;
     height: 350px;
-      /* border-radius: 50%; 寬高要相同 */
+      /* border-radius 圓角半徑 寬高要相同 */
     border-radius: 50%;
     object-fit: cover;
-    border-radius: 350px;
     /* 顯示模式：區塊 */
     /* 區塊元素 block */
     display: block;
